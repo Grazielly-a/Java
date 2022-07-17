@@ -1,27 +1,23 @@
 package HerançaPOO;
 
-public class Animal {
-	private String nome;
-	private int idade;
-	private String som;
+public abstract class Animal {
 	
+	private String tipoAnimal;
 	
-	public String getNome() {
-		return nome;
+	public Animal (String tipoanimal) {
+		this.tipoAnimal = tipoanimal;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	
+	abstract public void Nome (String nomeanimal);
+	abstract public void Idade (int idadeanimal);
+	abstract public void Som (String somanimal);
+
+	public String getTipoAnimal() {
+		return tipoAnimal;
 	}
-	public int getIdade() {
-		return idade;
+
+	public void setTipoAnimal(String tipoAnimal) {
+		this.tipoAnimal = tipoAnimal;
 	}
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-	public String getSom() {
-		return som;
-	}
-	public void setSom(String som) {
-		this.som = som;
-	}	
+	
 }

@@ -1,19 +1,27 @@
 package HerançaPOO;
 
 public class Preguiça extends Animal {
-	private String subirArvores;
-
-	public String getSubirArvores() {
-		return subirArvores;
-	}
-
-	public void setSubirArvores(String subirArvores) {
-		this.subirArvores = subirArvores;
+	
+	public Preguiça() {
+		super("Cachorro");
 	}
 	
-	
-	
-	
-	
-
+	@Override
+	public void Nome (String nomeanimal) {
+		System.out.println("Nome do preguica: "+nomeanimal);
+	}
+	@Override
+	public void Idade (int idadeanimal) {
+		System.out.println("Idade: "+idadeanimal);
+	}
+	@Override
+	public void Som (String somanimal) {
+		System.out.println("Som que o seu preguica emite: "+somanimal);
+	}
+	public void Subirarvores () {
+		System.out.println("Uma das caracteristicas do preguica é subir em árvores!");
+	}
+	public void infoPreguica() {
+		
+	}
 }
