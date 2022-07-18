@@ -10,6 +10,25 @@ public class ClassCliente {
 	private String cpf;
 	private String dataNascimento;
 	private String paga;
+	
+	//Metodo especial construtor 
+	 public ClassCliente (String nome, String sexo, String cpf, String dataNascimento, String paga)
+	 {
+		 this.nome = nome;
+		 this.sexo = sexo;
+		 this.cpf = cpf;
+		 this.dataNascimento = dataNascimento;
+		 this.paga = paga;
+	 }
+	 
+	 public void cadastroCliente()
+	 {
+		 System.out.println("Cadastro Cliente!"+"\nNome: "+nome+"\nSexo: "+sexo+"\nCpf: "+cpf+"\nData de Nascimento: "+dataNascimento);
+	 }
+	 public void formaPagamento()
+	 {
+		 System.out.println("\nPagamento em: "+paga);
+	 }
 		
 
 	public String getNome() {

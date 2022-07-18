@@ -10,8 +10,21 @@ public class ClassCelular {
 	
 	private String modelo;
 	private String cor;
-	private String sitemaOperacional;
+	private String sistemaOperacional;
 	private int espacoArmazenamento;
+	
+	public ClassCelular (String modelo, String cor, String sistemaOperacional, int espacoArmazenamento)
+	{
+		this.modelo = modelo;
+		this.cor = cor;
+		this.sistemaOperacional = sistemaOperacional;
+		this.espacoArmazenamento = espacoArmazenamento;
+	}
+	
+	public void tipoCelular()
+	{
+		System.out.println("Celular"+"\nModelo: "+modelo+"\nCor: "+cor+"\nSistema Operacional: "+sistemaOperacional+"\nEspaço armazenamento em GB: "+espacoArmazenamento);
+	}
 	
 	public String getModelo() {
 		return modelo;
@@ -25,11 +38,11 @@ public class ClassCelular {
 	public void setCor(String cor) {
 		this.cor = cor;
 	}
-	public String getSitemaOperacional() {
-		return sitemaOperacional;
+	public String getSistemaOperacional() {
+		return sistemaOperacional;
 	}
-	public void setSitemaOperacional(String sitemaOperacional) {
-		this.sitemaOperacional = sitemaOperacional;
+	public void setSitemaOperacional(String sistemaOperacional) {
+		this.sistemaOperacional = sistemaOperacional;
 	}
 	public int getEspacoArmazenamento() {
 		return espacoArmazenamento;
